@@ -1,0 +1,30 @@
+
+
+<div class="pos-f-t container">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      
+        <button (click)="Listar()" class="btn btn-dark">Usuarios</button>
+        <button (click)="Nuevo()" class="btn btn-dark" style="margin-left: 10px">Nuevo Usuario</button>
+        <button (click)="Proyectos()" class="btn btn-dark" style="margin-left: 10px">Proyectos</button>
+        <button (click)="CrearProyectos()" class="btn btn-dark" style="margin-left: 10px">Nuevos Proyectos</button>
+        <button (click)="Ausencias()" class="btn btn-dark" style="margin-left: 10px">Ausencias</button>
+        <button (click)="CrearAusencias()" class="btn btn-dark" style="margin-left: 10px">Nueva Ausencia</button>
+        <button (click)="Empleados()" class="btn btn-dark" style="margin-left: 10px">Empleados</button>
+        <button (click)="CrearEmpleados()" class="btn btn-dark" style="margin-left: 10px">Nuevo Empleado</button>
+        <button (click)="Skills()" class="btn btn-dark" style="margin-left: 10px">Skills</button>
+        <button (click)="CrearSkills()" class="btn btn-dark" style="margin-left: 10px">Nueva Skill</button>
+      
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <div>
+    <img src="https://logosrated.net/wp-content/uploads/parser/Guapos-Logo-1.png" class="rounded mx-auto d-block" alt="" style="width: 50px;">
+  </div>
+</div>
+
+<router-outlet></router-outlet>

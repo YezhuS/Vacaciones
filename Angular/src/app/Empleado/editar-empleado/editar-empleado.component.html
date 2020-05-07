@@ -1,0 +1,16 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">   
+            <h3>Editar Empleados</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="">Hire Date: </label>
+                    <input type="date" class="form-control" [(ngModel)]="Empleado.hireDate" name="hireDate">
+                </div>
+                <button (click)="Actualizar(Empleado)" class="btn btn-danger">Editar</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header" style="text-align: center;">
+            <h3>¡Esa Gente con las manos en el aire!</h3>
+        </div>
+        <div>
+            <img src="https://logosrated.net/wp-content/uploads/parser/Guapos-Logo-1.png" class="rounded mx-auto d-block" alt="" style="width: 50px;">
+        </div>
+        <div class="card-body">
+            <table class="table table-hover" style="text-align: center;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOMBRE</th>
+                        <th>APELLIDOS</th>
+                        <th>EDAD</th>
+                        <th>ROL</th>
+                        <th>EMAIL</th>
+                        <th>LANGUAGE</th>
+                        <th>ACTIVO</th>
+                        <th><button (click)="killThemAll()" class="btn btn-dark">Kill Them All</button></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let persona of personas" class="text-center">
+                        <td>{{persona.id}}</td>
+                        <td>{{persona.name}}</td>
+                        <td>{{persona.lastName}}</td>
+                        <td>{{persona.age}}</td>
+                        <td>{{persona.rol}}</td>
+                        <td>{{persona.email}}</td>
+                        <td>{{persona.language}}</td>
+                        <td>{{persona.active}}</td>
+                        <td>
+                            <button (click)="Editar(persona)" class="btn btn-warning">Editar</button>
+                            <button (click)="Eliminar(persona)" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

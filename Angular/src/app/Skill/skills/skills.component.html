@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header" style="text-align:center;">
+            <h3>Skills</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover" style="text-align:center;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOMBRE</th>
+                        <th>DESCRIPCIÓN</th>
+                        <th>PROYECTOS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let Skill of Skill" class="text-center">
+                        <td>{{Skill.id}}</td>
+                        <td>{{Skill.name}}</td>
+                        <td>{{Skill.description}}</td>
+                        <td>{{Skill.Proyecto}}</td>
+                        <td><button (click)="Editar(Skill)" class="btn btn-warning">Editar</button>
+                        <button (click)="Eliminar(Skill)" class="btn btn-danger">Eliminar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
